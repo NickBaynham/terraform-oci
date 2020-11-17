@@ -1,3 +1,4 @@
-data "oci_identity_availability_domains" "ads" {
-  compartment_id = var.compartment_ocid
+module "availability-domains" {
+  source = "../modules/availability-domains"
+  compartment_ocid = var.compartment_ocid
 }
