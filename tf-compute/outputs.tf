@@ -3,9 +3,9 @@ output "name-of-first-availability-domain" {
 }
 
 output "compute-instance-ip" {
-  value = oci_core_instance.ubuntu_instance.public_ip
+  value = oci_core_instance.oracle_instance.public_ip
 }
 
 output "compute-instance-id" {
-  value = oci_core_instance.ubuntu_instance.id
+  value = oci_core_instance.oracle_instance.id
 }
