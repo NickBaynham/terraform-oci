@@ -10,5 +10,7 @@ variable "compartment_description" {
   default = "Terraform Managed Compartment"
 }
 
-variable "tenancy_ocid" {}
-variable "compartment_ocid" {}
+variable "tenancy_ocid" {
+  description = "Compartment creation requires a tenancy ocid"
+  type = string
+}

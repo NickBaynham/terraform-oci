@@ -11,6 +11,12 @@ variable "shape" {
   default = "VM.Standard.E2.2"
 }
 
+variable "shape-windows" {
+  description = "The Shape of Compute Instance to Use for Windows"
+  type = string
+  default = "VM.Standard1.1"
+}
+
 variable source_id {
   description = "Oracle-Linux-7.9-2020.10.26-0"
   type = string
@@ -34,6 +40,25 @@ variable oracle_linux_8 {
   description = "Oracle Linux 8.0.2019.08.18-1"
   type = string
   default = "ocid1.image.oc1..aaaaaaaaiqhm2r5wsdd4p2dnz4s2q34nblvxwui45v6vpegpr2rjfeqb7r7q"
+}
+
+variable windows_2012 {
+  description = "Microsoft Windows Server Standard 2012"
+  type = string
+  default = "ocid1.image.oc1.iad.aaaaaaaakbmu54vvu3mso4iwmku2mqgfbu7uai65ngwq6ewoo5nc2tttzdjq"
+}
+
+variable windows_2016 {
+  description = "Microsoft Windows Server Standard 2016"
+  type = string
+  default = "ocid1.image.oc1.iad.aaaaaaaa4ahdz77crfxw3aiw3bjtl5vaz225hhq3unh5y2wf6mlwh7omyq3q"
+
+}
+
+variable windows_2019 {
+  description = "Microsoft Windows Server Standard 2019"
+  type = string
+  default = "ocid1.image.oc1.iad.aaaaaaaazyzgaru4on6comlolg7ft5m3l7ueos3pnqhgs3zitajpogvsj27q"
 }
 
 variable display_name {
