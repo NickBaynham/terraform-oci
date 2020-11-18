@@ -11,3 +11,4 @@ variable "compartment_description" {
 }
 
 variable "tenancy_ocid" {}
+variable "compartment_ocid" {}
