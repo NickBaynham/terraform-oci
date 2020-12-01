@@ -7,5 +7,6 @@ module "windows_server" {
   vcn_subnet_cidr = "10.1.1.0/30"
   ads = data.oci_identity_availability_domains.ads.availability_domains[*].name
   compute_image_ocid = data.oci_core_images.windows_image.images[0].id
+  server_password=var.server_password
 }
 
