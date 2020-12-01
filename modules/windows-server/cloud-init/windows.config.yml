@@ -2,7 +2,7 @@
 
 # Template variables
 $user='opc'
-$password='J3nkinsWin2016'
+$password='T3rraform2020!'
 
 # Update the password for opc user
 net user $user $password
