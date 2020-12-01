@@ -1,0 +1,1 @@
+output "web_instance_public_ip" { value = module.oracle-linux.web_public_ip }

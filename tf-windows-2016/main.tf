@@ -9,7 +9,7 @@ data "oci_core_images" "windows_server_2012_image" {
   shape = "VM.Standard.E2.1"
 }
 
-data "oci_core_images" "windows_server_216_image" {
+data "oci_core_images" "windows_server_2016_image" {
   compartment_id = var.compartment_ocid
   operating_system = "Windows"
   operating_system_version = "Server 2016 Standard"

@@ -8,13 +8,13 @@ variable "region" {}
 variable "shape" {
   description = "The Shape of Compute Instance to Use"
   type = string
-  default = "VM.Standard.E2.2"
+  default = "VM.Standard.E2.1"
 }
 
 variable "shape-windows" {
   description = "The Shape of Compute Instance to Use for Windows"
   type = string
-  default = "VM.Standard1.1"
+  default = "VM.Standard.E2.1"
 }
 
 variable source_id {
