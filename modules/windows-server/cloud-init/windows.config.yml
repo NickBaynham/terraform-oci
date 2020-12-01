@@ -1,0 +1,12 @@
+#ps1_sysnative
+
+# Template variables
+$user='opc'
+$password='J3nkinsWin2016'
+
+# Update the password for opc user
+net user $user $password
+
+# Added proxy for the instance (only needed when subnet doesn't have internet access)
+[system.net.webrequest]::defaultwebproxy = new-object system.net.webproxy('10.44.105.53:80')
+[system.net.webrequest]::defaultwebproxy.BypassProxyOnLocal = $true
