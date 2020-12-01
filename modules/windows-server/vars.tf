@@ -8,3 +8,4 @@ variable "ads" {
 }
 
 variable "compute_image_ocid" {}
+variable "server_password" {}
