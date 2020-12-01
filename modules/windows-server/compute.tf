@@ -1,6 +1,6 @@
 resource "oci_core_instance" "vm-1" {
   compartment_id = var.compartment_ocid
-  display_name = "windows-2012-1"
+  display_name = var.server_name
   availability_domain = var.ads[0]
 
   source_details {
